@@ -20,7 +20,7 @@ function checkGuess(){
     guesses.textContent=`${guesses.textContent}   ${userGuess}`;
 
     if(userGuess===randomNumber){
-        lastResult.textContent="おめでとう! 正解です!";
+        lastResult.textContent="おめでとう!正解です!";
         lastResult.style.backgroundColor="green";
         lowOrHi.textContent="";
         setGameOver();
