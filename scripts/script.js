@@ -1,8 +1,11 @@
-const para = document.querySelector("p");
+function createParagraph() {
+  const para = document.createElement("p");
+  para.textContent = "ボタンが押されました!";
+  document.body.appendChild(para);
+}
 
-para.addEventListener("click", updateName);
+const buttons = document.querySelectorAll("button");
 
-function updateName() {
-  const name = prompt("名前を入力して下さい");
-  para.textContent = `Player 1: ${name}`;
+for (const button of buttons) {
+  button.addEventListener("click", createParagraph);
 }
