@@ -9,9 +9,58 @@
         margin: 10px
       };
     </style>
-    <script src="scripts/random-coolor.js" defer></script>
+    <link href="styles/event.css" rel="stylesheet"/>
+    <script src="scripts/random-color.js" defer></script>
   </head>
   <body>
-    <button>色を変更</button>
+    <button id="button1">色を変更</button>
+    <input id="textBox" type="text"/>
+    <div id="output"></div>
+    <form>
+        <div>
+            <label for="fname">姓: </label>
+            <input id="fname" type="text" />
+        </div>
+        <div>
+            <label for="lname">名: </label>
+            <input id="lname" type="text"/>
+        </div>
+        <div>
+            <input di="submit" type="submit" />
+        </div>
+    </form>
+    <p></p>
+    <div id="container">
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <div class="tile"></div>
+        <button id="button2">クリックしてください</button>
+    </div>
+    <pre id="output2"></pre>
+    <button id="button3">動画を表示</button>
+
+    <div id="div2" class="hidden">
+      <video>
+        <source
+          src="https:/interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+          type="video/webm"/>
+        <p>
+          お使いのブラウザーは HTML 動画に対応していません。代わりに<a href="rabbit.jpg">動画へのリンク</a
+            >をご利用ください。
+        </p>
+      </video>
   </body>
 </html>
